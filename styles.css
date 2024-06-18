@@ -92,7 +92,7 @@ header a.active {
 }
 
 .hero {
-    background: url('images/hero-background-concept.jpg') no-repeat center center/cover;
+    background: url('images/hero-background-artistic.jpg') no-repeat center center/cover;
     color: #fff;
     height: 50vh; /* Reduced height by half */
     text-align: center;
@@ -149,54 +149,3 @@ header a.active {
 }
 
 .solution-step {
-    width: 30%;
-    padding: 10px;
-}
-
-.how-it-works {
-    background: #d3d3d3; /* Grey background */
-    color: #333;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.how-it-works-columns {
-    display: flex;
-    justify-content: space-around;
-}
-
-.how-it-works-step {
-    width: 22%;
-    padding: 10px;
-}
-
-.contact {
-    background: #d3d3d3; /* Light grey background */
-    color: #333;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: auto;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer nav {
-    padding-top: 10px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}

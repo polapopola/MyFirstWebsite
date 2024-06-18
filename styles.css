@@ -94,7 +94,7 @@ header a.active {
 .hero {
     background: url('images/hero-background-concept.jpg') no-repeat center center/cover;
     color: #fff;
-    height: 100vh; /* Make sure the hero section covers the full viewport height */
+    height: 50vh; /* Reduced height by half */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -103,14 +103,30 @@ header a.active {
     padding: 0 20px;
 }
 
+.hero h2 {
+    font-size: 3em; /* Increase the font size */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em; /* Increase the font size */
+    margin-bottom: 30px;
+}
+
 .hero .cta {
     display: inline-block;
-    color: #333;
-    background: #fff;
-    padding: 10px 20px;
+    color: #fff;
+    background: #007bff; /* More prominent background color */
+    padding: 15px 30px; /* Increase padding for prominence */
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-size: 1.5em; /* Increase the font size */
+    transition: background 0.3s, color 0.3s;
+}
+
+.hero .cta:hover {
+    background: #0056b3; /* Darker shade on hover */
+    color: #fff;
 }
 
 .about {

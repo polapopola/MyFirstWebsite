@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <header>
+    <header>
         <div class="container">
             <h1>MicroHealth</h1>
             <nav>
@@ -17,6 +17,11 @@
                 <a href="#how-it-works">How It Works</a>
                 <a href="#contact">Contact</a>
             </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
     </header>
     <section id="home" class="hero">
@@ -100,5 +105,15 @@
         </div>
     </footer>
 </body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('header nav');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+});
+</script>
 </html>
 

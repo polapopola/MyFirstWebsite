@@ -3,47 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Enhanced Website</title>
+    <title>MicroHealth - Revolutionizing Vascular Health</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container">
+            <h1>MicroHealth</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hello! I'm learning web development.</p>
-            <img src="images/profile.jpg" alt="Profile Picture">
-        </section>
-        
-        <section>
-            <h2>My Interests</h2>
-            <ul>
-                <li>Coding</li>
-                <li>Reading</li>
-                <li>Traveling</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Contact Me</h2>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Revolutionizing Vascular Health with Advanced Technology</h2>
+            <p>Early detection of microvascular issues to prevent serious cardiovascular conditions.</p>
+            <a href="#about" class="cta">Learn More</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About MicroHealth</h2>
+            <p>At MicroHealth, our mission is to lead the health revolution in vascular health. Using cutting-edge technology, we provide early detection and personalized care to improve the quality of life for our patients. Join us in our journey to make precise early diagnosis accessible to all.</p>
+        </div>
+    </section>
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="solution-step">
+                <h3>Advanced Sublingual Microscopy</h3>
+                <p>Utilizing the latest in microscopy technology to examine microcirculation.</p>
+            </div>
+            <div class="solution-step">
+                <h3>Machine Learning Analysis</h3>
+                <p>Leveraging AI to detect early signs of microvascular damage.</p>
+            </div>
+            <div class="solution-step">
+                <h3>Personalized Approach</h3>
+                <p>Tailoring treatment plans to enhance therapy effectiveness and patient quality of life.</p>
+            </div>
+        </div>
+    </section>
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <ol>
+                <li>
+                    <h3>Schedule a Consultation</h3>
+                    <p>Book an appointment with our specialists.</p>
+                </li>
+                <li>
+                    <h3>In-Depth Analysis</h3>
+                    <p>Undergo a detailed examination using our advanced sublingual microscopy.</p>
+                </li>
+                <li>
+                    <h3>Receive Your Report</h3>
+                    <p>Get a comprehensive report with personalized recommendations.</p>
+                </li>
+                <li>
+                    <h3>Start Your Journey</h3>
+                    <p>Begin your tailored treatment plan and monitor progress regularly.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
             <form action="https://formspree.io/f/xyyrrqae" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required><br><br>
-                <input type="email" name="email" placeholder="Your Email" required><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
                 <button type="submit">Submit</button>
             </form>
-        </section>
-    </main>
-    
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <div class="container">
+            <p>&copy; 2024 MicroHealth</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

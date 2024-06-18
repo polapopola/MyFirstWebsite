@@ -48,6 +48,21 @@ header a.active {
     border-radius: 5px;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
     header {
@@ -58,12 +73,21 @@ header a.active {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        display: none;
+    }
+
+    header nav.active {
+        display: flex;
     }
 
     header a {
         padding: 10px;
         width: 100%;
         text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 }
 
@@ -160,4 +184,3 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
-

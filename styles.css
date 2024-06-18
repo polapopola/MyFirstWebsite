@@ -24,9 +24,8 @@ header {
     z-index: 1000; /* Ensure it stays on top of other elements */
 }
 
-header h1 {
-    margin: 0;
-    flex-grow: 1;
+header .logo {
+    flex: 1;
 }
 
 header nav {
@@ -93,7 +92,7 @@ header a.active {
 }
 
 .hero {
-    background: url('images/hero-background-artistic.jpg') no-repeat center center/cover;
+    background: url('images/hero-background-concept.jpg') no-repeat center center/cover;
     color: #fff;
     height: 100vh; /* Make sure the hero section covers the full viewport height */
     text-align: center;
@@ -185,4 +184,3 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
-

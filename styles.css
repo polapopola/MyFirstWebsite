@@ -38,8 +38,8 @@ header h1 {
 }
 
 .hero {
-    background: #d3d3d3; /* Light grey background */
-    color: #333;
+    background: url('images/hero-background-artistic.jpg') no-repeat center center/cover;
+    color: #fff;
     padding: 100px 0;
     text-align: center;
 }
@@ -124,4 +124,3 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
-

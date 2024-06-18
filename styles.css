@@ -26,6 +26,7 @@ header {
 
 header h1 {
     margin: 0;
+    flex-grow: 1;
 }
 
 header nav {
@@ -184,3 +185,4 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
+

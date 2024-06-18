@@ -42,7 +42,7 @@ header h1 {
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-    height: 100vh; /* Make sure the hero section covers the full viewport height */
+    height: 70 vh; /* Make sure the hero section covers the full viewport height */
     text-align: center;
     display: flex;
     flex-direction: column;

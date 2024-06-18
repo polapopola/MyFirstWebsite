@@ -12,11 +12,22 @@ body {
 }
 
 header {
-    background: #5f9ea0; /* Blue-green background */
+    background: linear-gradient(to bottom, #84ACB4, #b8d8e0);
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
+    padding: 10px 0;
     border-bottom: #77a1d3 3px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
 }
 
 header a {
@@ -24,25 +35,39 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    padding: 0 15px;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
 }
 
-header nav {
-    display: inline;
-    float: right;
+header a:hover,
+header a.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
-header h1 {
-    display: inline;
-    float: left;
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .hero {
-    background: url('images/hero-background-artistic.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url('images/hero-background-artistic.jpg') no-repeat center center/cover;
     color: #fff;
-    height: 70 vh; /* Make sure the hero section covers the full viewport height */
+    height: 100vh; /* Make sure the hero section covers the full viewport height */
     text-align: center;
     display: flex;
     flex-direction: column;

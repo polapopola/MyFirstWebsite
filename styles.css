@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, #3a6073, #8ebacb);
+    background: #5f9ea0; /* Blue-green background */
     color: #fff;
     padding: 10px 0;
     border-bottom: #77a1d3 3px solid;
@@ -157,3 +157,4 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
+

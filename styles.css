@@ -20,6 +20,7 @@ nav a {
 
 main {
     padding: 20px;
+    padding-bottom: 100px; /* Add extra padding at the bottom */
 }
 
 h2 {
@@ -43,7 +44,6 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
+    position: relative; /* Changed from fixed to relative */
     width: 100%;
-    bottom: 0;
 }

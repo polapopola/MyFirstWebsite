@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #5f9ea0; /* Blue-green background */
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
@@ -38,8 +38,8 @@ header h1 {
 }
 
 .hero {
-    background: #77a1d3;
-    color: #fff;
+    background: #d3d3d3; /* Light grey background */
+    color: #333;
     padding: 100px 0;
     text-align: center;
 }
@@ -53,13 +53,57 @@ header h1 {
     border-radius: 5px;
 }
 
-.about, .solutions, .how-it-works, .contact {
+.about {
+    background: #fff; /* White background */
+    color: #333;
     padding: 50px 0;
     text-align: center;
 }
 
-.solutions .solution-step, .how-it-works ol li {
-    margin: 20px 0;
+.solutions {
+    background: #b0e0e6; /* Light green-blue background */
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.solutions-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.solution-step {
+    width: 30%;
+    padding: 10px;
+}
+
+.how-it-works {
+    background: #d3d3d3; /* Grey background */
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.how-it-works-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.how-it-works-step {
+    width: 22%;
+    padding: 10px;
+}
+
+.contact {
+    background: #d3d3d3; /* Light grey background */
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
 }
 
 footer {

@@ -341,20 +341,100 @@ header a.active {
 }
 
 footer {
-    background: #333;
+    background: #5f9ea0; /* Same color as the header */
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-footer nav {
+footer .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #77a1d3; /* Lighter shade on hover */
+}
+
+.footer-section form input[type="email"] {
+    padding: 10px;
+    width: calc(100% - 22px); /* Adjust width for padding */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section form button {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.footer-section form button:hover {
+    background: #333;
+}
+
+.footer-bottom {
+    border-top: 1px solid #77a1d3;
     padding-top: 10px;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+.footer-bottom p {
+    margin: 5px 0;
 }
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #77a1d3; /* Lighter shade on hover */
+}
+

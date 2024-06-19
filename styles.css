@@ -231,7 +231,11 @@ header a.active {
 
 .how-it-works-step {
     width: 22%;
-    padding: 10px;
+    padding: 20px;
+    border: 2px solid #fff; /* White border */
+    border-radius: 15px; /* Rounded edges */
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    position: relative;
 }
 
 .how-it-works-step h3 {
@@ -243,34 +247,19 @@ header a.active {
     font-size: 1.2em; /* Increase the font size for the paragraph */
 }
 
-.contact {
-    background: #d3d3d3; /* Light grey background */
-    color: #333;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: auto;
-}
-
-footer {
-    background: #333;
+.how-it-works-step::before {
+    content: attr(data-step); /* Use the data-step attribute for numbering */
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #5f9ea0; /* Blue-green background */
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
 }
-
-footer nav {
-    padding-top: 10px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-

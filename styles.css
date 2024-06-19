@@ -406,17 +406,18 @@ footer .container {
 }
 
 .footer-section form button {
-    background: #000;
+    background: #5f9ea0; /* Same background as the "Learn More" button on Hero page */
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
     transition: background 0.3s;
 }
 
 .footer-section form button:hover {
-    background: #333;
+    background: #77a1d3; /* Lighter shade on hover, same as "Learn More" button on Hero page */
 }
 
 .footer-bottom {
@@ -437,4 +438,5 @@ footer .container {
 .footer-bottom a:hover {
     color: #77a1d3; /* Lighter shade on hover */
 }
+
 

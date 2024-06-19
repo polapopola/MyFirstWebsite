@@ -156,10 +156,10 @@ header a.active {
 
 .solution-step {
     position: relative;
-    width: 30%;
+    width: 30%; /* Adjust the width as needed */
     border-radius: 15px;
     overflow: hidden;
-    padding-top: 177.78%; /* 9:16 Aspect Ratio */
+    padding-top: 133.33%; /* 3:4 Aspect Ratio */
 }
 
 .background-video {

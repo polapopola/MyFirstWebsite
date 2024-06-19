@@ -159,7 +159,7 @@ header a.active {
     width: 30%; /* Adjust the width as needed */
     border-radius: 15px;
     overflow: hidden;
-    padding-top: 133.33%; /* 3:4 Aspect Ratio */
+    padding-top: 33.33%; /* 1/4 of the original height */
 }
 
 .background-video {

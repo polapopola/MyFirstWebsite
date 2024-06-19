@@ -136,7 +136,7 @@ header a.active {
 
 /* About Section */
 .about {
-    background: #f5f5dc; /* Soft beige background */
+    background: linear-gradient(135deg, #EDC89B 0%, #F3D4A7 50%, #E3B58F 100%); /* Gradient background */
     color: #333;
     padding: 50px 0;
     text-align: center;

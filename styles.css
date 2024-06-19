@@ -133,6 +133,8 @@ header a.active {
     background: #77a1d3; /* Lighter shade on hover */
     color: #fff;
 }
+
+/* About Section */
 .about {
     background: #f5f5dc; /* Soft beige background */
     color: #333;
@@ -152,6 +154,7 @@ header a.active {
     line-height: 1.6;
 }
 
+/* Solutions Section */
 .solutions {
     background: #f9f9f6; /* Very light beige background */
     color: #333;
@@ -214,6 +217,7 @@ header a.active {
     font-size: 1em;
 }
 
+/* How It Works Section */
 .how-it-works {
     background: #f5f5dc; /* Match the soft beige background */
     color: #333;
@@ -268,6 +272,7 @@ header a.active {
     font-size: 1.5em;
 }
 
+/* Contact Section */
 .contact {
     background: #f9f9f6; /* Very light beige background, same as Solutions section */
     color: #333;
@@ -344,6 +349,7 @@ header a.active {
     background: #77a1d3; /* Lighter shade on hover, same as "Learn More" button on Hero page */
 }
 
+/* Footer Section */
 footer {
     background: #5f9ea0; /* Same color as the header */
     color: #fff;

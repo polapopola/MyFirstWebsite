@@ -148,13 +148,6 @@ header a.active {
     line-height: 1.6;
 }
 
-.solutions {
-    background: #b0e0e6; /* Light green-blue background */
-    color: #333;
-    padding: 50px 0;
-    text-align: center;
-}
-
 .solutions-columns {
     display: flex;
     justify-content: space-around;
@@ -164,9 +157,9 @@ header a.active {
 .solution-step {
     position: relative;
     width: 30%;
-    padding: 10px;
     border-radius: 15px;
     overflow: hidden;
+    padding-top: 177.78%; /* 9:16 Aspect Ratio */
 }
 
 .background-video {
@@ -180,11 +173,19 @@ header a.active {
 }
 
 .solution-step .content {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .solution-step h3 {

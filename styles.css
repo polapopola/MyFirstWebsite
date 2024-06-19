@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #5f9ea0; /* Blue-green background */
+    background: rgba(95, 158, 160, 0.7); /* Blue-green background with reduced opacity */
     color: #fff;
     padding: 10px 0;
     border-bottom: #77a1d3 3px solid;
@@ -351,7 +351,7 @@ header a.active {
 
 /* Footer Section */
 footer {
-    background: #5f9ea0; /* Same color as the header */
+    background: rgba(95, 158, 160, 0.7); /* Same color as the header with reduced opacity */
     color: #fff;
     padding: 20px 0;
     text-align: center;

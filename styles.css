@@ -130,10 +130,22 @@ header a.active {
 }
 
 .about {
-    background: #fff; /* White background */
+    background: #f5f5dc; /* Soft beige background */
     color: #333;
     padding: 50px 0;
     text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em; /* Increase the font size for the heading */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em; /* Increase the font size for the paragraph */
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
 }
 
 .solutions {

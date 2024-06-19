@@ -211,20 +211,36 @@ header a.active {
 }
 
 .how-it-works {
-    background: #d3d3d3; /* Grey background */
+    background: #f5f5dc; /* Match the soft beige background */
     color: #333;
     padding: 50px 0;
     text-align: center;
 }
 
+.how-it-works h2 {
+    font-size: 3em; /* Same font size as the Hero section title */
+    margin-bottom: 20px;
+}
+
 .how-it-works-columns {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
+    padding-top: 50px; /* Add padding to match the title height */
 }
 
 .how-it-works-step {
     width: 22%;
     padding: 10px;
+}
+
+.how-it-works-step h3 {
+    font-size: 1.5em; /* Increase the font size for the heading */
+    margin-bottom: 10px;
+}
+
+.how-it-works-step p {
+    font-size: 1.2em; /* Increase the font size for the paragraph */
 }
 
 .contact {
@@ -257,3 +273,4 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
+

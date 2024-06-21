@@ -230,7 +230,7 @@ header a.active {
 
 /* How It Works Section */
 .how-it-works {
-    background: #f5f5dc; /* Match the soft beige background */
+    background: linear-gradient(135deg, #EDC89B, #f0dab5); /* Match the About section background */
     color: #333;
     padding: 50px 0;
     text-align: center;
@@ -282,7 +282,6 @@ header a.active {
     align-items: center;
     font-size: 1.5em;
 }
-
 /* Contact Section */
 .contact {
     background: #f9f9f6; /* Very light beige background, same as Solutions section */

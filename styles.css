@@ -208,6 +208,7 @@ header a.active {
 
 .solutions-columns {
     display: flex;
+    flex-direction: column; /* Default to column layout */
     justify-content: space-around;
     gap: 20px;
     padding-top: 50px; /* Add padding to match the title height */
@@ -219,6 +220,8 @@ header a.active {
     border-radius: 15px;
     overflow: hidden;
     padding-top: 33.33%; /* Maintain aspect ratio */
+    width: 90%; /* Full width on smaller screens */
+    margin: auto;
 }
 
 .background-video {
@@ -257,21 +260,9 @@ header a.active {
 }
 
 /* Responsive Solutions Section */
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     .solutions-columns {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .solution-step {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 1201px) {
-    .solutions-columns {
-        display: flex;
+        flex-direction: row; /* Row layout for larger screens */
         gap: 30px;
     }
 

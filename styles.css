@@ -180,6 +180,24 @@ header a.active {
     line-height: 1.6;
 }
 
+.about .cta {
+    display: inline-block;
+    color: #fff;
+    background: #869980; /* Same background as the header */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Adjust font size as needed */
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.about .cta:hover {
+    background: #77a1d3; /* Lighter shade on hover */
+    color: #fff;
+}
+
 /* Responsive About Section */
 @media (max-width: 768px) {
     .about h2 {

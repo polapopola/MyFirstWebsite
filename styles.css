@@ -17,7 +17,6 @@ header {
     background: rgba(134, 153, 128, 1);
     color: #fff;
     padding: 10px 0;
-    border-bottom: #77a1d3 3px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,7 +314,7 @@ header a.active {
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #5f9ea0;
+    background: #869980;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -490,7 +489,7 @@ footer .container {
 }
 
 .footer-section form button {
-    background: #5f9ea0;
+    background: #869980;
     color: #fff;
     padding: 10px 20px;
     border: none;

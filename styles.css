@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background: rgba(95, 158, 160, 0.9);
+    background: rgba(134, 153, 128, 1);
     color: #fff;
     padding: 10px 0;
     border-bottom: #77a1d3 3px solid;
@@ -161,7 +161,7 @@ header a.active {
 
 /* About Section */
 .about {
-    background: linear-gradient(135deg, #EDC89B, #f0dab5);
+    background: linear-gradient(135deg, #e8e2d8, #faf8f3);
     color: #333;
     padding: 70px 0;
     text-align: center;
@@ -273,7 +273,7 @@ header a.active {
 
 /* How It Works Section */
 .how-it-works {
-    background: linear-gradient(135deg, #EDC89B, #f0dab5);
+    background: linear-gradient(135deg, #e8e2d8, #faf8f3);
     color: #333;
     padding: 50px 0;
     text-align: center;
@@ -402,7 +402,7 @@ header a.active {
 }
 
 .contact button {
-    background: #5f9ea0;
+    background: #869980;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -425,7 +425,7 @@ header a.active {
 
 /* Footer Section */
 footer {
-    background: rgba(95, 158, 160, 0.7);
+    background: rgba(134, 153, 128, 1);
     color: #fff;
     padding: 20px 0;
     text-align: center;

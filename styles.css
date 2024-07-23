@@ -642,3 +642,59 @@ footer .container {
     line-height: 1.6;
 }
 
+/* Blog Section */
+.blog {
+    background: #f9f9f6; /* Very light beige background */
+    color: #333;
+    padding: 70px 0;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog h2 {
+    font-size: 3em; /* Same font size as the Hero section title */
+    margin-bottom: 20px;
+}
+
+.blog p {
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Blog Post Section */
+.blog-post {
+    background: #f5f5dc; /* Light beige background */
+    color: #333;
+    padding: 70px 0;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    font-size: 3em; /* Same font size as the Hero section title */
+    margin-bottom: 20px;
+}
+
+.blog-post p {
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+/* Responsive Blog and Blog Post Sections */
+@media (max-width: 768px) {
+    .blog h2,
+    .blog-post h2 {
+        font-size: 2em;
+    }
+
+    .blog p,
+    .blog-post p {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+}

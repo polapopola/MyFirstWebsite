@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaliks Life</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kaliks Life</h1>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Better Blood Flow, Better Life</h2>
+            <p>Our personalized approach focuses on improving microcirculation, reducing the impact of ageing, and helping you maintain peak health and vitality.</p>
+            <a href="#about" class="cta">Learn More</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+          <h2>The Story of Us</h2>
+          <p>We are a passionate female-led team who discovered the critical role of blood vessel health in ageing while studying Nutrition Science. Our journey has led us to pioneering research and innovative solutions to enhance vascular health and longevity.</p>
+          <a href="#read-more" class="cta">Read More</a>
+      </div>
+  </section>
+<section id="solutions" class="solutions">
+    <div class="container">
+        <h2>Our Solutions</h2>
+        <div class="solutions-columns">
+            <div class="solution-step">
+                <video autoplay muted loop playsinline class="background-video">
+                    <source src="videos/solution1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content">
+                    <h3>Cutting-Edge Technology</h3>
+                    <p>Our device uses state-of-the-art technology to measure sublingual microcirculation, offering a non-invasive way to assess and understand your vascular health.</p>
+                </div>
+            </div>
+            <div class="solution-step">
+                <video autoplay muted loop playsinline class="background-video">
+                    <source src="videos/solution2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content">
+                    <h3>Comprehensive Health Tracking</h3>
+                    <p>Monitor and analyze your microcirculation data regularly. Our platform visualizes your progress, helping you understand the impact of lifestyle changes on your vascular health.</p>
+                </div>
+            </div>
+            <div class="solution-step">
+                <video autoplay muted loop playsinline class="background-video">
+                    <source src="videos/solution3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content">
+                    <h3>Personalized Health Solutions</h3>
+                    <p>Receive customized health plans based on your unique data. Our experts provide personalized advice, including lifestyle interventions and treatments to optimize your vascular health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <section id="how-it-works" class="how-it-works">
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="how-it-works-columns">
+            <div class="how-it-works-step" data-step="1">
+                <h3>Measure</h3>
+                <p>Using our non-invasive device, we measure the microcirculation under your tongue, providing a snapshot of your overall vascular health.</p>
+            </div>
+            <div class="how-it-works-step" data-step="2">
+                <h3>Analyze</h3>
+                <p>Our advanced software analyzes the data, identifying signs of endothelial dysfunction and other microvascular issues.</p>
+            </div>
+            <div class="how-it-works-step" data-step="3">
+                <h3>Recommend</h3>
+                <p>Receive personalized health insights and actionable recommendations from our network of health experts.</p>
+            </div>
+            <div class="how-it-works-step" data-step="4">
+                <h3>Improve</h3>
+                <p>Implement lifestyle changes and treatments tailored to your unique needs, and track your progress over time for continuous improvement.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="education-hub" class="education-hub">
+        <div class="container">
+            <h2>Education Hub</h2>
+            <div class="education-columns">
+                <div class="education-post">
+                    <h3>Understanding Microcirculation</h3>
+                    <p>Explore the importance of microcirculation and how it impacts overall health.</p>
+                    <a href="#read-more" class="cta">Read More</a>
+                </div>
+                <div class="education-post">
+                    <h3>Latest Research in Vascular Health</h3>
+                    <p>Stay updated with the latest research and advancements in vascular health.</p>
+                    <a href="#read-more" class="cta">Read More</a>
+                </div>
+                <div class="education-post">
+                    <h3>Tips for Healthy Blood Vessels</h3>
+                    <p>Discover practical tips to maintain healthy blood vessels and improve circulation.</p>
+                    <a href="#read-more" class="cta">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Please fill this form in a decent manner</p>
+            <form action="https://formspree.io/f/xyyrrqae" method="POST">
+                <div class="form-group">
+                    <label for="first-name">Full Name *</label>
+                    <div class="name-inputs">
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: info@kaliks.life</p>
+                <p>Phone: +123-456-7890</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#privacy-policy">Privacy Policy</a></li>
+                    <li><a href="#terms-of-service">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <form action="#">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kaliks Life. All rights reserved.</p>
+            <p>Disclaimer: The information provided on this website is for informational purposes only and is not intended as medical advice.</p>
+            <p>We are committed to ensuring digital accessibility for all. <a href="#accessibility-statement">Accessibility Statement</a></p>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('header nav');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+});
+</script>
+</html>

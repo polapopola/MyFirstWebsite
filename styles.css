@@ -1,0 +1,623 @@
+/* General Styles */
+body {
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: rgba(134, 153, 128, 1);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header a:hover,
+header a.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-background-medical.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 60vh; /* Adjust as needed */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text contrast */
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 3.5em; /* Increase font size */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+.hero p {
+    font-size: 1.7em; /* Increase font size */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+.hero .cta {
+    display: inline-block;
+    color: #fff;
+    background: #869980; /* Same background as the header */
+    padding: 20px 40px; /* Increase padding */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em; /* Increase font size */
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.hero .cta:hover {
+    background: #77a1d3; /* Lighter shade on hover */
+    color: #fff;
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .hero .cta {
+        font-size: 1em;
+        padding: 15px 30px;
+    }
+}
+
+/* About Section */
+.about {
+    background: linear-gradient(135deg, #e8e2d8, #faf8f3);
+    color: #333;
+    padding: 70px 0;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.about .cta {
+    display: inline-block;
+    color: #fff;
+    background: #869980; /* Same background as the header */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Adjust font size as needed */
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.about .cta:hover {
+    background: #77a1d3; /* Lighter shade on hover */
+    color: #fff;
+}
+
+/* Responsive About Section */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+}
+
+/* Solutions Section */
+.solutions {
+    background: #f9f9f6; /* Very light beige background */
+    color: #333;
+    padding: 50px 0 100px; /* Add padding to the bottom */
+    text-align: center;
+}
+
+.solutions h2 {
+    font-size: 3em; /* Same font size as the Hero section title */
+    margin-bottom: 20px;
+}
+
+.solutions-columns {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 50px; /* Add padding to match the title height */
+}
+
+.solution-step {
+    position: relative;
+    flex: 1; /* Allow flex to take up available space */
+    border-radius: 15px;
+    overflow: hidden;
+    padding-top: 33.33%; /* Maintain aspect ratio */
+    width: 90%; /* Full width on smaller screens */
+    margin: auto;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.solution-step .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.solution-step p {
+    font-size: 1em;
+}
+
+/* Responsive Solutions Section */
+@media (min-width: 1200px) {
+    .solutions-columns {
+        flex-direction: row; /* Row layout for larger screens */
+        gap: 30px;
+    }
+
+    .solution-step {
+        width: 30%; /* Ensure each step doesn't take up too much space */
+    }
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: linear-gradient(135deg, #e8e2d8, #faf8f3);
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.how-it-works-columns {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.how-it-works-step {
+    width: 22%;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.how-it-works-step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.how-it-works-step p {
+    font-size: 1.2em;
+}
+
+.how-it-works-step::before {
+    content: attr(data-step);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #869980;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+/* Responsive How It Works Section */
+@media (max-width: 768px) {
+    .how-it-works-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-it-works-step {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Education Hub Section */
+.education-hub {
+    background: #f9f9f6; /* Same very light beige background */
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.education-hub h2 {
+    font-size: 3em; /* Same font size as other section titles */
+    margin-bottom: 20px;
+}
+
+.education-columns {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 50px; /* Add padding to match the title height */
+}
+
+.education-post {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.education-post h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education-post p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.education-post .cta {
+    display: inline-block;
+    color: #fff;
+    background: #869980; /* Same background as the header */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.education-post .cta:hover {
+    background: #77a1d3; /* Lighter shade on hover */
+    color: #fff;
+}
+
+/* Responsive Education Hub Section */
+@media (min-width: 1200px) {
+    .education-columns {
+        flex-direction: row; /* Row layout for larger screens */
+        gap: 30px;
+    }
+    
+    .education-post {
+        width: 30%; /* Ensure each post doesn't take up too much space */
+    }
+}
+
+/* Contact Section */
+.contact {
+    background: #f9f9f6;
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact .container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact .name-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.contact .name-inputs input {
+    flex: 1;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact button {
+    background: #869980;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #77a1d3;
+}
+
+/* Responsive Contact Section */
+@media (max-width: 768px) {
+    .contact .container {
+        width: 90%;
+    }
+}
+
+/* Footer Section */
+footer {
+    background: rgba(134, 153, 128, 1);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #77a1d3;
+}
+
+.footer-section form input[type="email"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section form button {
+    background: #869980;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.footer-section form button:hover {
+    background: #77a1d3;
+}
+
+.footer-bottom {
+    border-top: 1px solid #77a1d3;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #77a1d3;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

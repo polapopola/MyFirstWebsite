@@ -358,14 +358,14 @@ header a.active {
 
 /* Education Hub Section */
 .education-hub {
-    background: #f9f9f6; /* Same very light beige background */
+    background: #f9f9f6;
     color: #333;
     padding: 50px 0;
     text-align: center;
 }
 
 .education-hub h2 {
-    font-size: 3em; /* Same font size as other section titles */
+    font-size: 3em; /* Same font size as the Hero section title */
     margin-bottom: 20px;
 }
 
@@ -378,11 +378,13 @@ header a.active {
 }
 
 .education-post {
-    background: #fff;
+    position: relative;
+    flex: 1; /* Allow flex to take up available space */
     border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
+    overflow: hidden;
+    padding-top: 33.33%; /* Maintain aspect ratio */
+    width: 90%; /* Full width on smaller screens */
+    margin: auto;
 }
 
 .education-post h3 {
@@ -392,17 +394,16 @@ header a.active {
 
 .education-post p {
     font-size: 1em;
-    margin-bottom: 20px;
 }
 
 .education-post .cta {
     display: inline-block;
     color: #fff;
-    background: #869980; /* Same background as the header */
+    background: #5f9ea0; /* Same background as the header */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1em; /* Increase font size */
     transition: background 0.3s, color 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
@@ -418,9 +419,9 @@ header a.active {
         flex-direction: row; /* Row layout for larger screens */
         gap: 30px;
     }
-    
+
     .education-post {
-        width: 30%; /* Ensure each post doesn't take up too much space */
+        width: 30%; /* Ensure each step doesn't take up too much space */
     }
 }
 

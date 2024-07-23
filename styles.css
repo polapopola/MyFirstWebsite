@@ -356,6 +356,74 @@ header a.active {
     }
 }
 
+/* Education Hub Section */
+.education-hub {
+    background: #f9f9f6; /* Same very light beige background */
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.education-hub h2 {
+    font-size: 3em; /* Same font size as other section titles */
+    margin-bottom: 20px;
+}
+
+.education-columns {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 50px; /* Add padding to match the title height */
+}
+
+.education-post {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.education-post h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education-post p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.education-post .cta {
+    display: inline-block;
+    color: #fff;
+    background: #869980; /* Same background as the header */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.education-post .cta:hover {
+    background: #77a1d3; /* Lighter shade on hover */
+    color: #fff;
+}
+
+/* Responsive Education Hub Section */
+@media (min-width: 1200px) {
+    .education-columns {
+        flex-direction: row; /* Row layout for larger screens */
+        gap: 30px;
+    }
+    
+    .education-post {
+        width: 30%; /* Ensure each post doesn't take up too much space */
+    }
+}
+
 /* Contact Section */
 .contact {
     background: #f9f9f6;

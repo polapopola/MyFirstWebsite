@@ -425,6 +425,20 @@ header a.active {
     }
 }
 
+/* Remove link styling for the Education Hub title link */
+.hub-title-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+}
+
+/* Ensure no additional styles are applied on hover */
+.hub-title-link:hover, 
+.hub-title-link:focus, 
+.hub-title-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Contact Section */
 .contact {
     background: #f9f9f6;

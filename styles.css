@@ -358,7 +358,7 @@ header a.active {
 
 /* Education Hub Section */
 .education-hub {
-    background: #f9f9f6;
+    background: #f9f9f6; /* Very light beige background */
     color: #333;
     padding: 50px 0;
     text-align: center;
@@ -382,9 +382,16 @@ header a.active {
     flex: 1; /* Allow flex to take up available space */
     border-radius: 15px;
     overflow: hidden;
-    padding-top: 33.33%; /* Maintain aspect ratio */
+    padding: 20px; /* Add padding */
+    background: #fff; /* Add background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
     width: 90%; /* Full width on smaller screens */
     margin: auto;
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.education-post:hover {
+    transform: translateY(-10px); /* Slightly lift on hover */
 }
 
 .education-post h3 {
@@ -399,7 +406,7 @@ header a.active {
 .education-post .cta {
     display: inline-block;
     color: #fff;
-    background: #5f9ea0; /* Same background as the header */
+    background: #869980; /* Same background as the header */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -423,20 +430,6 @@ header a.active {
     .education-post {
         width: 30%; /* Ensure each step doesn't take up too much space */
     }
-}
-
-/* Remove link styling for the Education Hub title link */
-.hub-title-link {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit color from parent element */
-}
-
-/* Ensure no additional styles are applied on hover */
-.hub-title-link:hover, 
-.hub-title-link:focus, 
-.hub-title-link:active {
-    text-decoration: none;
-    color: inherit;
 }
 
 /* Contact Section */

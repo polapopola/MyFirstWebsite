@@ -236,7 +236,7 @@ header a.active {
     flex: 1; /* Allow flex to take up available space */
     border-radius: 15px;
     overflow: hidden;
-    padding-top: 33.33%; /* Maintain aspect ratio */
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
     width: 90%; /* Full width on smaller screens */
     margin: auto;
 }
@@ -265,15 +265,19 @@ header a.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box; /* Ensure padding is included in element's width and height */
+    text-align: center; /* Center text within the content box */
 }
 
 .solution-step h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .solution-step p {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin: 0 10px; /* Add margin to ensure padding from the container's edges */
+    line-height: 1.4; /* Improve readability with line height */
 }
 
 /* Responsive Solutions Section */
@@ -285,6 +289,20 @@ header a.active {
 
     .solution-step {
         width: 30%; /* Ensure each step doesn't take up too much space */
+    }
+}
+
+@media (max-width: 768px) {
+    .solution-step .content {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .solution-step h3 {
+        font-size: 1.5em; /* Adjust font size on smaller screens */
+    }
+
+    .solution-step p {
+        font-size: 1em;
     }
 }
 

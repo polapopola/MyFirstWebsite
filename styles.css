@@ -294,6 +294,15 @@ header a.active {
 
 @media (max-width: 768px) {
     .solution-step .content {
+        flex-direction: column; /* Maintain column layout on smaller screens */
+    }
+
+    .solution-step {
+        width: 100%; /* Full width on smaller screens */
+        padding-top: 50%; /* Adjust aspect ratio for better view on small screens */
+    }
+
+   .solution-step .content {
         padding: 15px; /* Reduce padding on smaller screens */
     }
 

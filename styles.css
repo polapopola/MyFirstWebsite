@@ -394,6 +394,17 @@ header a.active {
 .education-hub h2 {
     font-size: 3em; /* Same font size as the Hero section title */
     margin-bottom: 20px;
+    color: #333; /* Ensure consistent color */
+}
+
+.education-hub a.hub-title-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from the h2 element */
+}
+
+.education-hub a.hub-title-link:hover {
+    text-decoration: none; /* Ensure underline does not appear on hover */
+    color: inherit; /* Inherit color from the h2 element */
 }
 
 .education-columns {

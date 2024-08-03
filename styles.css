@@ -670,14 +670,15 @@ footer .container {
 
 /* Our Story Section */
 .our-story {
-    background: #f5f5dc;
+    background: #f9f9f6; /* Very light beige background */
     color: #333;
-    padding: 50px 0;
+    padding: 70px 0;
     text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .our-story h2 {
-    font-size: 3em;
+    font-size: 3em; /* Same font size as the Hero section title */
     margin-bottom: 20px;
 }
 
@@ -686,6 +687,46 @@ footer .container {
     max-width: 800px;
     margin: auto;
     line-height: 1.6;
+}
+
+.story-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.story-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.story-image {
+    margin-top: 20px;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Our Story Section */
+@media (min-width: 768px) {
+    .story-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .story-text,
+    .story-image {
+        width: 45%;
+    }
+
+    .story-image {
+        margin-top: 0;
+    }
 }
 
 /* Blog Section */
